@@ -69,3 +69,7 @@ Exemplo de caso de uso utilizando Promise para consultar API do GitHub.
 ### Utilizando Axios
 
 Exemplo de caso de uso utilizando a lib Axios, para trabalhar com NodeJS.
+
+### Utilizando Axios com Promise
+
+Exemplo de caso de uso utilizando várias promises ao mesmo tempo e retornando o resultado das consutas.
