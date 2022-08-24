@@ -57,4 +57,7 @@ console.log('conectando API')
 - A função **get()** recebe, além do argumento **API**, uma função anônima `res => {}` que exibirá o statusCode
 - Esta função `res => {}` é uma callback e será executada após o `console.log('conectando API')` que está fora da função `get()`
 
-## Promisse
+## Promise
+
+É uma promessa de algo será executado. De forma assíncrona, a promessa será executada.
+Ela possui retornos; a promessa precisa dar resultado e ser finalizada.
