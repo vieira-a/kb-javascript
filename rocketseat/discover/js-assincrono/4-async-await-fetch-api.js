@@ -1,11 +1,11 @@
 async function getGitHubRepositories() {
     const username = 'vieira-a'
-    const url = `https://api.github.com/users/${username}`;
+    const url = `https://api.github.com/users/${username}`
     const user = await fetch(url).then(res => res.json());
     const userRep = await fetch(user.repos_url).then( res => res.json());
     
     userRep.map((repos) => {
-        //myRepos.push(`name: ${repos.name}, url: ${repos.url}`)
+        //create an object with variables
         let myRepos = {
             'reponame': repos.name,
             'repodescription': repos.description,
