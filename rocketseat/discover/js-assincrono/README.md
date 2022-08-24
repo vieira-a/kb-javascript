@@ -73,3 +73,8 @@ Exemplo de caso de uso utilizando a lib Axios, para trabalhar com NodeJS.
 ### Utilizando Axios com Promise
 
 Exemplo de caso de uso utilizando várias promises ao mesmo tempo e retornando o resultado das consutas.
+
+## Async e Await
+
+Uma maneira **Syntactic Sugar** de escrever as Promises.
+Exemplo de uso de async/await com API Fetch.
