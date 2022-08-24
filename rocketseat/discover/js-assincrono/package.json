@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "axios": "^0.27.2"
+  },
+  "name": "js-assincrono",
+  "description": "-[x] O que é síncrono x assíncrono no JS? -[x] Qual é o fluxo natural de execução do JS? -[x] O que é uma `callback function`? -[x] Sobre a função `setTimeout()` -[x] Caso de uso",
+  "version": "1.0.0",
+  "main": "1-callback.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

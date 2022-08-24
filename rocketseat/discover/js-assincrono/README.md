@@ -61,3 +61,11 @@ console.log('conectando API')
 
 É uma promessa de algo será executado. De forma assíncrona, a promessa será executada.
 Ela possui retornos; a promessa precisa dar resultado e ser finalizada.
+
+### Promise com Fetch
+
+Exemplo de caso de uso utilizando Promise para consultar API do GitHub.
+
+### Utilizando Axios
+
+Exemplo de caso de uso utilizando a lib Axios, para trabalhar com NodeJS.
