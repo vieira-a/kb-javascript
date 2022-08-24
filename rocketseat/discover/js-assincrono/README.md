@@ -1,5 +1,4 @@
 # Javascript Assíncrono
-
 ## JavaScript Síncrono x Assíncrono
 
 -[x] O que é síncrono x assíncrono no JS?
@@ -57,3 +56,5 @@ console.log('conectando API')
 ```
 - A função **get()** recebe, além do argumento **API**, uma função anônima `res => {}` que exibirá o statusCode
 - Esta função `res => {}` é uma callback e será executada após o `console.log('conectando API')` que está fora da função `get()`
+
+## Promisse
