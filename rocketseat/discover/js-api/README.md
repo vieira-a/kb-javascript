@@ -17,3 +17,23 @@
 ## Utilizando o Insominia
 É um software utilizado para facilitar a manipulação de requisições a APIs. Nele é possível criar **Coleções** (Projetos) de trabalho; dentro dessas coleções é possível criar todos os métodos HTTP para as APIs indicadas. É muito útil, pois é possível guardar informações sobre projetos e organizar as consultas.
 
+# Projeto API utilizando NodeJS + Express
+-[x] Criando servidor;
+-[x] Criando rota de acesso ao index através do método GET;
+
+## Métodos HTTML no Express
+Fazer com que apareça no navegador a resposta da requisição GET:
+**GET** `app.route('/').get((req, res)=> res.send("Hello world"));`
+
+Para os demais métodos é necessário utilizar o Insomnia, pois o navegador só reconhece o método GET.
+- [x] Configurado ambiente no Insomnia para testar o servidor com os métodos HTTP;
+- [x] Configurar arquivo **index.js** para enviar requisições de métodos para o servidor;
+
+    - [x] POST
+        
+        Criei um arquivo JSON no **body** da requisição, para enviá-lo no **POST** e fazer com que o conteúdo deste retorne, para verificar se o método funciona normalmente.
+        ```
+        app.use(express.json());
+        app.route('/').post((req, res) => res.send(req.body));
+
+        ```
