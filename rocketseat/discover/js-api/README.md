@@ -18,8 +18,8 @@
 É um software utilizado para facilitar a manipulação de requisições a APIs. Nele é possível criar **Coleções** (Projetos) de trabalho; dentro dessas coleções é possível criar todos os métodos HTTP para as APIs indicadas. É muito útil, pois é possível guardar informações sobre projetos e organizar as consultas.
 
 # Projeto API utilizando NodeJS + Express
--[x] Criando servidor;
--[x] Criando rota de acesso ao index através do método GET;
+- [x] Criando servidor;
+- [x] Criando rota de acesso ao index através do método GET;
 
 ## Métodos HTTML no Express
 Fazer com que apareça no navegador a resposta da requisição GET:
@@ -35,5 +35,27 @@ Para os demais métodos é necessário utilizar o Insomnia, pois o navegador só
         ```
         app.use(express.json());
         app.route('/').post((req, res) => res.send(req.body));
+
+        ```
+    - [x] PUT
+
+        Criado o método PUT para alterar o valor de uma variável chamada **author**:
+        A variável é criada inicialmente após a inicialização do servidor; feito isso, cria-se a rota com o método **PUT** para alterar o valor desta variável; cria-se também o PUT também no **Insomnia**, aonde é criado um JSON no body com o novo valor da variável author: `{"author": "Anderson Vieira"}`
+        
+        ```
+        let author = "Anderson"
+
+        app.route('/').put((req,res) => {
+            author = req.body.author
+            res.send(author)
+        })
+
+        ```
+        Criada também uma rota GET para exibir o valor da variável alterada:
+
+        ```
+        app.route('/').get((req,res) => {
+            res.send(author)
+        })
 
         ```
